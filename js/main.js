@@ -20,11 +20,8 @@ const carsInfo1 = [
       carData.innerHTML += `
       <div class="item">
       <div class="item-img">
-        <div class="item-img-info"><a href="accessories-detail.html?=${item.id}" title="Retis lapen casen" class="product-image">
-          <img src="${item.images[0]}" alt="Retis lapen casen"></a>
-
-          
-       
+        <div class="item-img-info product-image">
+          <img src="${item.images[0]}" alt="Retis lapen casen">
         </div>
       </div>
       <div class="item-info">
@@ -55,7 +52,7 @@ const carsInfo1 = [
     ]
 },
     {
-        id:"6", name: 'VW Bus', model: '2019', speed: '24000kms', images:[
+        id:"6", name: 'V Bus', model: '2019', speed: '24000kms', images:[
         'products-images/bus.png'
     ]
 },
@@ -76,9 +73,9 @@ const carsInfo1 = [
                <div class="item-img">
                </div>
              </div>
-             <div class="item-img-info"> <a href="accessories-detail-1.html" title="Retis lapen casen" class="product-image">
-  
-               <img src="${item.images[0]}" alt="Retis lapen casen"></a>   
+             <div class="item-img-info product-image">
+          <img src="${item.images[0]}" alt="Retis lapen casen">
+        </div>  
                <div class="item-info">
                  <div class="info-inner">
                    <div class="item-content">
@@ -136,9 +133,9 @@ const carsInfo1 = [
                <div class="item-img">
                </div>
              </div>
-             <div class="item-img-info"> <a href="accessories-detail-1.html" title="Retis lapen casen" class="product-image">
-  
-               <img src="${item.images[0]}" alt="Retis lapen casen"></a>   
+             <div class="item-img-info product-image">
+          <img src="${item.images[0]}" alt="Retis lapen casen">
+        </div>  
                <div class="item-info">
                  <div class="info-inner">
                    <div class="item-content">
@@ -166,6 +163,104 @@ const carsInfo1 = [
              carId.innerHTML += car
          })
      }
+
+
+
+     
+    const carsInf4 = [
+      {
+          id:'9', name: 'VW Golf 7 R', speed: '65000kms', model: '2019', images:
+      ['products-images/g2.png']
+  },
+      {
+          id:'10', name: 'VW Golf GTI', speed: '847kms', model: '2018', images:
+      ['products-images/gti-side.png']
+  },
+      {
+          id:'9', name: 'Ford Mustage GT', speed: '689kms', model: '2017', images:
+      ['products-images/horse.png']
+  },
+      {
+          id:'9', name: 'Hyundia i20', speed: '43000kms', model: '2019', images:
+      ['products-images/honda-f1.png']
+  },
+]
+        getCars4(carsInf4)
+     function getCars4(data){
+         const carId = document.getElementById('cars4') ;
+         data.forEach((item)=> {
+             let car = `
+             <div class="item">
+             <div class="item-inner">
+               <div class="item-img">
+               </div>
+             </div>
+             <div class="item-img-info product-image">
+             <img src="${item.images[0]}" alt="Retis lapen casen">
+           </div>  
+               <div class="item-info">
+                 <div class="info-inner">
+                   <div class="item-content">
+                     <div class="rating">
+                       
+                     </div>
+                     <!-- <div class="item-price">
+                       <div class="price-box"><span class="regular-price"><span class="price">$99000.00</span> </span> </div>
+                     </div> -->
+                     <br><br>
+                     <div class="other-info">
+                       
+                       <div class="item-title"><a href="#" title="Retis lapen casen" id="product">${item.name} </a> </div>
+                       <div class="col-km"><i class="fa fa-tachometer"></i>${item.speed}</div>
+                       <div class="col-engine"><i class="fa fa-gea"></i></div>
+                       <div class="col-date"><i class="fa fa-calendar" aria-hidden="true"></i>${item.model}</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+             `;
+
+             carId.innerHTML += car
+         })
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
